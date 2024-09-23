@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon_io/site.webmanifest">
+
+<!-- Scripts mainly for the publication part -->
+<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js/src/bibtex_js.js"></script>
+<script type="text/javascript">
+  function reset() {
+      $("select").each(function () {
+	  localStorage.setItem($(this).attr("id"),"");
+	  $(this).val("");
+      });
+      $("#searchbar").val("");
+      $("#searchbar").trigger('change');
+  }
+</script>
+
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- Academics -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+<!-- additional CSS information -->
+<style>
+  /* Bibtex navigation bar */
+  .bibtex_search_bar {
+      text-align: center;
+  }
+
+  /* Bibtex item */
+  .bibtexentry {
+      margin-top: 0.2em;
+      margin-bottom: 02em;
+  }
+
+  .url {
+      background: url('https://api.iconify.design/il:url.svg') no-repeat center center / contain;
+  }
+
+  .modal { max-width: 90%; }
+
+  /* The alert message box */
+  .alert {
+      padding: 20px;
+      background-color: #f44336; /* Red */
+      color: white;
+      margin-bottom: 15px;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+</style>
+
+
+</head>
+
+
+  <body>
+
+    <div class="container-fluid">
+      <div><header class="site-header" role="banner">
+
+	<nav class="navbar navbar-expand-sm navbar-light px-0">
+
+		<!-- Navbar brand -->
+		<a class="navbar-brand" href="/">MADHAV Lab</a>
+
+		<!-- Navbar toggler button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+			aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Navbar links -->
+		<div class="collapse navbar-collapse" id="navbarToggler">
+			<ul class="navbar-nav mr-auto">
+				<li>
+					<a class="nav-link" href="/team">Team</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/publications">Publications</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/projects">Projects</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/outcomes">Outcomes</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/jobs">Jobs</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/resources">Resources</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/gallery">Gallery</a>
+				</li>
+			</ul>
+		</div>
+
+	</nav>
+
+</header>
+</div>
+
+      <div class="mt-3">
+        <div>
+	<h1 class="mb-5">Learn</h1>
+	<style>
+
+#study-container {
+  padding: 0px;
+}
+
+#study-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#study-list li {
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  margin-bottom: 8px;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+#study-list li:hover {
+  font-weight: bold; /* Bold text on hover */
+  font-size: 20px;
+  background-color: #007bff; /* Lighter background color on hover */
+  cursor: pointer;
+}
+
+#study-list li:last-child {
+  margin-bottom: 0;
+}
+
+#study-list li.level-0 {
+  margin-top: 24px; /* Adjust the value based on your preference */
+}
+
+#study-list li a {
+  /* text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent (non-link color) */
+}
+
+</style>
+
+<div id="study-container">
+  <ul id="study-list">
+    
+    
+    
+      
+      <li class="level-0" style="margin-left: 0px; font-size: 22px;">
+      <a href="/learn/audiosearch" target="_blank">Audio Search</a>
+      </li>
+    
+      
+      <li class="level-1" style="margin-left: 40px; font-size: 22px;">
+      <a href="/learn/audiosearch/audiofingerprinting" target="_blank">Audio Fingerprinting</a>
+      </li>
+    
+      
+      <li class="level-1" style="margin-left: 40px; font-size: 22px;">
+      <a href="/learn/audiosearch/inforetrieval" target="_blank">Information Retrieval</a>
+      </li>
+    
+      
+      <li class="level-1" style="margin-left: 40px; font-size: 22px;">
+      <a href="/learn/audiosearch/spokentermdet" target="_blank">Spoken Term Detection</a>
+      </li>
+    
+      
+      <li class="level-0" style="margin-left: 0px; font-size: 22px;">
+      <a href="/learn/asr" target="_blank">Automatic Speech Recognition</a>
+      </li>
+    
+      
+      <li class="level-1" style="margin-left: 40px; font-size: 22px;">
+      <a href="/learn/asr/realtimeasr" target="_blank">Real time ASR</a>
+      </li>
+    
+      
+      <li class="level-1" style="margin-left: 40px; font-size: 22px;">
+      <a href="/learn/asr/e2easr" target="_blank">End to End ASR</a>
+      </li>
+    
+      
+      <li class="level-1" style="margin-left: 40px; font-size: 22px;">
+      <a href="/learn/asr/lowresourceasr" target="_blank">Low Resource ASR</a>
+      </li>
+    
+      
+      <li class="level-0" style="margin-left: 0px; font-size: 22px;">
+      <a href="/learn/musiceducation" target="_blank">Music Education</a>
+      </li>
+    
+      
+      <li class="level-0" style="margin-left: 0px; font-size: 22px;">
+      <a href="/learn/ml4physics" target="_blank">ML for Physics</a>
+      </li>
+    
+      
+      <li class="level-0" style="margin-left: 0px; font-size: 22px;">
+      <a href="/learn/genml4images" target="_blank">GenML for Image Generation</a>
+      </li>
+    
+  </ul>
+</div>
+
+</div>
+
+      </div>
+
+      <div>
+        <div id="footer" class="site-footer mt-5">
+	<div class="mt-3">
+		<div class="row d-flex">
+
+			<div class="col-sm-6">
+				<p class="font-weight-bold">MADHAV Lab</p>
+
+				<ul class="list-unstyled list-inline">
+					<li class="list-inline-item">
+						<a href="https://iitk.ac.in">
+							<img class="img-fluid" src="/assets/images/iitk_logo.png" style="max-height: 80px;">
+						</a>
+					</li>
+
+			</div>
+
+			<div class="col-sm-3">
+				<p class="font-weight-bold">Links</p>
+				<ul class="list-unstyled">
+					<li><a href="https://twitter.com/madhavlab" target="_blank">Twitter</a></li>
+                    <li><a href="https://linkedin.com/company/madhav-lab" target="_blank">LinkedIn</a></li>
+					<li><a href="https://github.com/madhavlab" target="_blank">Github</a></li>
+				</ul>
+			</div>
+
+			<div class="col-sm-3">
+				<p class="font-weight-bold">Contact</p>
+				ACES 305D, <br>
+				Electrical Engineering, <br>
+				Indian Institue of Technology Kanpur, <br>
+				UP, India <br>
+			</div>
+		</div>
+
+		<div class="footer-copyright text-center py-3">
+			© 2023 MADHAV Lab - Machine Analysis of Data for Human Audition and Visualization Lab
+		</div>
+	</div>
+</div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

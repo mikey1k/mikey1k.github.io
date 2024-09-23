@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon_io/site.webmanifest">
+
+<!-- Scripts mainly for the publication part -->
+<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js/src/bibtex_js.js"></script>
+<script type="text/javascript">
+  function reset() {
+      $("select").each(function () {
+	  localStorage.setItem($(this).attr("id"),"");
+	  $(this).val("");
+      });
+      $("#searchbar").val("");
+      $("#searchbar").trigger('change');
+  }
+</script>
+
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- Academics -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+<!-- additional CSS information -->
+<style>
+  /* Bibtex navigation bar */
+  .bibtex_search_bar {
+      text-align: center;
+  }
+
+  /* Bibtex item */
+  .bibtexentry {
+      margin-top: 0.2em;
+      margin-bottom: 02em;
+  }
+
+  .url {
+      background: url('https://api.iconify.design/il:url.svg') no-repeat center center / contain;
+  }
+
+  .modal { max-width: 90%; }
+
+  /* The alert message box */
+  .alert {
+      padding: 20px;
+      background-color: #f44336; /* Red */
+      color: white;
+      margin-bottom: 15px;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+</style>
+
+
+</head>
+
+
+  <body>
+
+    <div class="container-fluid">
+      <div><header class="site-header" role="banner">
+
+	<nav class="navbar navbar-expand-sm navbar-light px-0">
+
+		<!-- Navbar brand -->
+		<a class="navbar-brand" href="/">MADHAV Lab</a>
+
+		<!-- Navbar toggler button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+			aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Navbar links -->
+		<div class="collapse navbar-collapse" id="navbarToggler">
+			<ul class="navbar-nav mr-auto">
+				<li>
+					<a class="nav-link" href="/team">Team</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/publications">Publications</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/projects">Projects</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/outcomes">Outcomes</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/jobs">Jobs</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/resources">Resources</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/gallery">Gallery</a>
+				</li>
+			</ul>
+		</div>
+
+	</nav>
+
+</header>
+</div>
+
+      <div class="mt-3">
+        <div>
+	<h1 class="mb-5">Team</h1>
+	<!-- Staff -->
+<h2 class="mb-3"><a id="lead"></a>Lead</h2>
+
+
+<ul class="list-unstyled">
+<div class="row">
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/vipular.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Vipul Arora">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/vipular">Vipul Arora</a></h5>
+      <p>Professor</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://github.com/vipular/"><i class="fab fa-github"></i></a></li>
+    
+    <!-- Personal Website -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://vipular.github.io"><i class="fas fa-globe"></i></a></li>
+    
+    <!-- Google Scholar -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://scholar.google.com/citations?user=SC9YYPAAAAAJ&hl=en"><i class="ai ai-google-scholar-square ai"></i></a></li>
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:vipular@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+</div>
+</ul>
+
+
+<!-- Researchers -->
+
+<h2 class="mb-4"><a id="researcher"></a>Post Doctoral Fellows</h4>
+
+
+<ul class="list-unstyled">
+<div class="row">
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/rathna.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Nagarathna Ravi">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/rathna">Nagarathna Ravi</a></h5>
+      <p>Automatic Speech Recognition</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://scholar.google.com/citations?user=DjGaMp4AAAAJ&hl=en"><i class="ai ai-google-scholar-square ai"></i></a></li>
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:rathna@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/sagard.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Sagar Dutta">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/sagard">Sagar Dutta</a></h5>
+      <p>Audio Content Retrieval</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com/in/sagar-dutta-971497215/"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://github.com/sagar0dutta"><i class="fab fa-github"></i></a></li>
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://scholar.google.com/citations?hl=en&user=xp3L-EsAAAAJ"><i class="ai ai-google-scholar-square ai"></i></a></li>
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:sagard@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+</div>
+</ul>
+
+<!-- Students -->
+<h2 class="mb-3"><a id="student"></a>PhD Students</h2>
+
+
+<ul class="list-unstyled">
+<div class="row">
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/kavyars.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Kavya Ranjan Saxena">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/kavyars">Kavya Ranjan Saxena</a></h5>
+      <p>Melody extraction</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://twitter.com/kavyasaxena14"><i class="fab fa-twitter"></i></a></li>
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="www.linkedin.com/in/kavyarsaxena"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://scholar.google.com/citations?user=ngoJ38YAAAAJ&hl=en&oi=ao"><i class="ai ai-google-scholar-square ai"></i></a></li>
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:kavyars@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/krsumit.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Sumit Kumar">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/krsumit">Sumit Kumar</a></h5>
+      <p>Sound Event Detection</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com/in/sumit-kumar-368b52170"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:krsumit@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/adhiraj.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Adhiraj Banerjee">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/adhiraj">Adhiraj Banerjee</a></h5>
+      <p>Representation Learning</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com/in/adhiraj-banerjee-0051b01/"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:adhiraj@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/rkodag.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Rahul Bapusaheb Kodag">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/rkodag">Rahul Bapusaheb Kodag</a></h5>
+      <p>Confidence Estimation</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:rkodag@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/patnama.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="P V R Manikanta">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/patnama">P V R Manikanta</a></h5>
+      <p>Uncertainity Estimation</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com/in/venkataramana-manikanta-patnana-260003a4/"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:patnama@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/sanup.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Anup Singh (Visiting)">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/sanup">Anup Singh (Visiting)</a></h5>
+      <p>Multimedia Indexing</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://twitter.com/15_anup"><i class="fab fa-twitter"></i></a></li>
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com/in/anup-singh-a84a7476/"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://github.com/anupsingh15"><i class="fab fa-github"></i></a></li>
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://scholar.google.com/citations?user=wdHjvmsAAAAJ&hl=en"><i class="ai ai-google-scholar-square ai"></i></a></li>
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.researchgate.net/profile/Anup-Singh-18"><i class="fab fa-researchgate"></i></a></li>
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:sanup@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/akankss20.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Akanksha Singh">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/akankss20">Akanksha Singh</a></h5>
+      <p>Spoken term detection</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com/in/akanksha-singh-8b060b197/"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:akankss20@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/params21.JPG"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Parampreet Singh">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/params21">Parampreet Singh</a></h5>
+      <p>MIR, Explainable AI</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com/in/parampreet-singh-b2765721b/"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://home.iitk.ac.in/~params21/"><i class="fas fa-globe"></i></a></li>
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:params21@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+</div>
+</ul>
+
+<h2 class="mb-3"><a id="student"></a>Masters</h2>
+
+
+<ul class="list-unstyled">
+<div class="row">
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/arkapravab20.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Arkaprava Biswas">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/arkapravab20">Arkaprava Biswas</a></h5>
+      <p>Domain Adaptaion</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com/in/arkaprava-biswas-214096187"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://github.com/2021arkaprava"><i class="fab fa-github"></i></a></li>
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:arkapravab20@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/thishyan20.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Thishyan Raj T">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/thishyan20">Thishyan Raj T</a></h5>
+      <p>ASR for low resource languages</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:thishyan20@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/rraja21.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Raja Raviteja Chaganti">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/rraja21">Raja Raviteja Chaganti</a></h5>
+      <p>ASR in Indian languages (mainly Hindi)</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com/in/chaganti-ravi-teja-533276217/"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:rraja21@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/jsuraj.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Suraj Jaiswal">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/jsuraj">Suraj Jaiswal</a></h5>
+      <p>Music Information Retrieval</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://twitter.com/jsuraj_11"><i class="fab fa-twitter"></i></a></li>
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com/in/suraj-jaiswal-732823167/"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://github.com/js-suraj11"><i class="fab fa-github"></i></a></li>
+    
+    <!-- Personal Website -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://jssuraj.github.io/"><i class="fas fa-globe"></i></a></li>
+    
+    <!-- Google Scholar -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://scholar.google.com/citations?user=CKIA2YQAAAAJ&hl=en"><i class="ai ai-google-scholar-square ai"></i></a></li>
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.researchgate.net/profile/Suraj-Jaiswal-8"><i class="fab fa-researchgate"></i></a></li>
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:jsuraj@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+</div>
+</ul>
+
+<!-- Research Assistants -->
+<h2 class="mb-4"><a id="researcher"></a>Research Associates</h4>
+
+
+<ul class="list-unstyled">
+<div class="row">
+
+    
+    
+    <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/placeholder-m.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Akshay Raina">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/akshayr">Akshay Raina</a></h5>
+      <p>Representation Learning, MIR</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://twitter.com/_akshayraina"><i class="fab fa-twitter"></i></a></li>
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com/in/akshayraina1/"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://github.com/raina-akshay"><i class="fab fa-github"></i></a></li>
+    
+    <!-- Personal Website -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://raina-akshay.github.io"><i class="fas fa-globe"></i></a></li>
+    
+    <!-- Google Scholar -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://scholar.google.com/citations?user=urGzmJIAAAAJ&hl=en"><i class="ai ai-google-scholar-square ai"></i></a></li>
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:akshayr@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+    
+</div>
+</ul>
+
+
+<!-- Others -->
+<h3 class="mb-4"><a id="researcher"></a>Project Associates</h4>
+
+
+<ul class="list-unstyled">
+<div class="row">
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/shivnp.jpg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Shiv Narayan Pandey">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/shivnp">Shiv Narayan Pandey</a></h5>
+      <p>Data Analyst, Office Administration and Website Management</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:shivnp@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/placeholder-f.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Renu Chavan">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/renuch">Renu Chavan</a></h5>
+      <p>Music Teacher</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:renuch@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/ankitab.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Ankita Bhattacharya">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/ankitab">Ankita Bhattacharya</a></h5>
+      <p>Data Analyst</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:ankitab@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/KajalHeer.png"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Kajal Heer">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/kajalheer">Kajal Heer</a></h5>
+      <p>Music Teacher</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:kajalheer@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/divt.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Divyanshu Tripathi">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/divt">Divyanshu Tripathi</a></h5>
+      <p>Data Pre-processing and Analysis</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com/in/divyanshu-tripathi-517b71201"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:divt@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/vibhad.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Vibha Dwivedi">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/vibha">Vibha Dwivedi</a></h5>
+      <p>Data Analyst</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:vibhad@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/shrutim.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Shruti Mishra">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/shrutim">Shruti Mishra</a></h5>
+      <p>Data Analyst</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:shrutim@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/placeholder-m.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Sachidanand Prajapati">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/sachidanandp">Sachidanand Prajapati</a></h5>
+      <p>Data Analyst</p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:sbprajapati@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/shivam.png"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Shivam Pal">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/members/team/shivampal.html">Shivam Pal</a></h5>
+      <p></p>
+      <p></p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:shivampa@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+</div>
+</ul>
+
+<!-- Alumni -->
+<h2 class="mb-3"><a id="alumni"></a>Alumni</h2>
+
+
+<ul class="list-unstyled">
+<div class="row">
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/ankurs.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Ankur Singha">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/ankurs">Ankur Singha</a></h5>
+      <p>Generative learning for LFT</p>
+      <p>Here as: PhD-Student</p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com/in/sumit-kumar-368b52170"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:ankurs@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/abhirai.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Abhishek Rai">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/abhirai">Abhishek Rai</a></h5>
+      <p></p>
+      <p>Here as: Research Associate</p>
+      <p>Current: Project Associate, WSN Lab</p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com/in/abhishek-rai-490992179/"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:abhirai@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/tharunreddy.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Dr. Tharun Reddy">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/tharun">Dr. Tharun Reddy</a></h5>
+      <p></p>
+      <p>Here as: PhD Student</p>
+      <p>Current: Asst. Professor, IIT Roorkie</p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://tharuniitk.github.io/"><i class="fas fa-globe"></i></a></li>
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:tharun.reddy@ece.iitr.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/placeholder-m.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Jaivardhan Kapoor">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/amanks">Jaivardhan Kapoor</a></h5>
+      <p></p>
+      <p>Here as: Masters Student</p>
+      <p>Current: PhD, Max Planck Society</p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/placeholder-f.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Shivangi Ranjan">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/shivangir">Shivangi Ranjan</a></h5>
+      <p></p>
+      <p>Here as: Masters Student</p>
+      <p>Current: Intel</p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/alifaraz.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Ali Faraz">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/alifaraz">Ali Faraz</a></h5>
+      <p>ML for Physics</p>
+      <p>Here as: Master Student</p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:alifaraz@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/abhi20.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Abhishek Saini">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/abhi20">Abhishek Saini</a></h5>
+      <p>ML</p>
+      <p>Here as: Master Student</p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:abhi20@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/gauravt20.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Gaurav Tank">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/gauravt20">Gaurav Tank</a></h5>
+      <p>Sound Event Detection</p>
+      <p>Here as: Master Student</p>
+      <p>Current: Air India</p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://www.linkedin.com/in/tankgauravgt/"><i class="fab fa-linkedin"></i></a></li>
+    
+    <!-- Github -->
+    
+    <li class="list-inline-item"><a target="blank" href="https://github.com/tankgauravgt"><i class="fab fa-github"></i></a></li>
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:gauravt20@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/placeholder-m.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Kalpit Yadav">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/kalpit">Kalpit Yadav</a></h5>
+      <p></p>
+      <p>Here as: Masters Student</p>
+      <p>Current: Jio Saavn</p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+
+    
+    
+        <div class="col"><style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/placeholder-m.jpeg"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="Swapnil Dey">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="/team/swapnild">Swapnil Dey</a></h5>
+      <p>Domain Adaptation</p>
+      <p>Here as: RA</p>
+      <p></p><ul class="list-inline list-unstyled">
+    <!-- Twitter -->
+    
+    <!-- Linkedin -->
+    
+    <!-- Github -->
+    
+    <!-- Personal Website -->
+    
+    <!-- Google Scholar -->
+    
+    <!-- Orcid -->
+    
+    <!-- Research Gate -->
+    
+    <!-- Wikipedia -->
+    
+    <!-- Email -->
+    
+    <li class="list-inline-item"><a target="blank" href="mailto:swapnild@iitk.ac.in"><i class="fas fa-envelope"></i></a></li>
+    
+    
+</ul>
+</div>
+</li>
+</div>
+    
+        </div><div class="row">
+    
+
+</div>
+</ul>
+
+</div>
+
+      </div>
+
+      <div>
+        <div id="footer" class="site-footer mt-5">
+	<div class="mt-3">
+		<div class="row d-flex">
+
+			<div class="col-sm-6">
+				<p class="font-weight-bold">MADHAV Lab</p>
+
+				<ul class="list-unstyled list-inline">
+					<li class="list-inline-item">
+						<a href="https://iitk.ac.in">
+							<img class="img-fluid" src="/assets/images/iitk_logo.png" style="max-height: 80px;">
+						</a>
+					</li>
+
+			</div>
+
+			<div class="col-sm-3">
+				<p class="font-weight-bold">Links</p>
+				<ul class="list-unstyled">
+					<li><a href="https://twitter.com/madhavlab" target="_blank">Twitter</a></li>
+                    <li><a href="https://linkedin.com/company/madhav-lab" target="_blank">LinkedIn</a></li>
+					<li><a href="https://github.com/madhavlab" target="_blank">Github</a></li>
+				</ul>
+			</div>
+
+			<div class="col-sm-3">
+				<p class="font-weight-bold">Contact</p>
+				ACES 305D, <br>
+				Electrical Engineering, <br>
+				Indian Institue of Technology Kanpur, <br>
+				UP, India <br>
+			</div>
+		</div>
+
+		<div class="footer-copyright text-center py-3">
+			© 2023 MADHAV Lab - Machine Analysis of Data for Human Audition and Visualization Lab
+		</div>
+	</div>
+</div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

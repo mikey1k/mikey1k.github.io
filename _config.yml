@@ -1,0 +1,71 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title:  MADHAV Lab - Machine Analysis of Data for Human Audition and Visualization Lab
+author: MADHAV Lab
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Machine Analysis of Data for Human Audition and Visualization Lab, is a research group in
+  the Indian Institute of Technology Kanpur, started in 2018 by Prof. Vipul Arora. Current focus
+  of the research group lie at the intersection of the theory and application of machine learning - with a focus on applications 
+  in audio and speech processing, and Physics.
+baseurl: ""
+url: ""
+
+google_analytics: ""
+
+include:
+  - _pages
+
+sass_dir: ./_sass
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Conversion
+markdown: kramdown
+# usemathjax: true
+# mathjax: true
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  parse_block_html: true
+
+# Where things are 
+source              : .
+destination         : ./_site
+
+detach              : false
+show_dir_listing    : false
+permalink           : date
+paginate_path       : /page:num
+timezone            : null
+port                : 4000
+host                : 127.0.0.1
+
+collections:
+  members:
+    output          : true
+    sort_by         : date
+  # TODO: Fix the Layout before enabling.
+  #blog:
+  #  output          : true
+  #  sort_by         : date
+  # permalink       : /:collection/:date/:name

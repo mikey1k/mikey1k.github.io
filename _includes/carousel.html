@@ -1,0 +1,47 @@
+<style>
+    .carousel-container {
+        position: relative;
+        width: 300px; /* Adjust the carousel width as needed */
+        overflow: hidden;
+    }
+
+    .carousel-image {
+        display: none;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        transition: opacity 0.5s;
+    }
+
+    .carousel-image.active {
+        display: block;
+    }
+
+    .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+</style>
+
+<div class="carousel-container">
+    {% assign images = site.static_files | where: "path", site.baseurl | append: "/assets/carousel_images/" %}
+    {% for image in images %}
+    <img src="{{ image.path }}" alt="Image {{ forloop.index }}" class="carousel-image{% if forloop.first %} active{% endif %}">
+    {% endfor %}
+    <button class="carousel-button prev" data-direction="-1">Previous</button>
+    <button class="carousel-button next" data-direction="1">Next</button>
+</div>

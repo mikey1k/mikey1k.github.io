@@ -1,0 +1,20 @@
+<style>
+  p {
+    margin-bottom: 0px; /* Adjust this value as needed to reduce the space */
+  }
+</style>
+
+<li class="media mb-5">
+    <img class="align-self-center mr-3"
+         src="/assets/images/team/{{ member.image }}"
+         style="max-width: 110px;border-radius: 50%;"
+         alt="{{member.title}}">
+
+    <div class="media-body">
+      <h5 class="mt-0"><a href="{{ member.url }}">{{ member.title }}</a></h5>
+      <p>{{member.role}}</p>
+      <p>{{member.hereas}}</p>
+      <p>{{member.current}}</p>
+      {%- include team_member_social.html -%}
+    </div>
+</li>

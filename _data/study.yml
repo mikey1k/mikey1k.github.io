@@ -1,0 +1,33 @@
+- name: Audio Search
+  file: audiosearch
+  level: 0
+- name: Audio Fingerprinting
+  file: audiofingerprinting
+  level: 1
+- name: Information Retrieval
+  file: inforetrieval
+  level: 1
+- name: Spoken Term Detection
+  file: spokentermdet
+  level: 1
+- name: Automatic Speech Recognition
+  file: asr
+  level: 0
+- name: Real time ASR
+  file: realtimeasr
+  level: 1
+- name: End to End ASR
+  file: e2easr
+  level: 1
+- name: Low Resource ASR
+  file: lowresourceasr
+  level: 1
+- name: Music Education
+  file: musiceducation
+  level: 0
+- name: ML for Physics
+  file: ml4physics
+  level: 0
+- name: GenML for Image Generation
+  file: genml4images
+  level: 0
